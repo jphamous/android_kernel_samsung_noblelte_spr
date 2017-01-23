@@ -3,8 +3,18 @@
 *.ap_
 *.o
 *.cmd
+*.builtin
+*.order
 fmp_hmac.bin
 fips_fmp_utils
+.config
+.missing-syscalls.d
+.tmp_System.map
+.tmp_versions/
+.tmp_vmlinux1
+.tmp_vmlinux2
+.version
+./.ccache/
 
 # Files for the Dalvik VM
 *.dex
