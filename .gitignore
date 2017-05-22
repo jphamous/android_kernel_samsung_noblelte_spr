@@ -1,6 +1,10 @@
 # Built application files
 *.apk
 *.ap_
+*.o
+*.cmd
+fmp_hmac.bin
+fips_fmp_utils
 
 # Files for the Dalvik VM
 *.dex
