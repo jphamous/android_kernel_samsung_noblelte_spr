@@ -2041,6 +2041,7 @@ static int wm_adsp_load_coeff(struct wm_adsp *dsp)
 	}
 
 out_fw:
+	regmap_async_complete(regmap);
 	release_firmware(firmware);
 	wm_adsp_buf_free(&buf_list);
 out:
@@ -3022,7 +3023,6 @@ err_raw_capt_buf:
 	kfree(dsp->raw_capt_buf);
 err_capt_buf:
 	vfree(dsp->capt_buf.buf);
-
 	return ret;
 }
 EXPORT_SYMBOL_GPL(wm_adsp_stream_alloc);
